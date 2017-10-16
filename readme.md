@@ -4,7 +4,7 @@ This repo serves as a log of my attempts to solve Project Euler problems with Ja
 I'm just running the JS scripts with Node right now. That may change as the problems become increasingly complex.
 
 ## Where are the problems?
-Go to [https://projecteuler.net/archives](https://projecteuler.net/archives)
+Go to [https://projecteuler.net/archives](https://projecteuler.net/archives) and register/login :)
 
 ## TODO:
 - Add testing library with npm/yarn?
