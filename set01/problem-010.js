@@ -2,19 +2,22 @@
 //
 // Find the sum of all the primes below two million.
 
-let primeSum = 0
+const primeArr = []
 
-// function to find if a number is prime or not. Returns boolean value.
+// func that takes in a number and checks if its prime or not. Returns boolean.
 const isPrime = (num) => {
-  for (let p = 2; p < num; p++)
-    if (num % p === 0) return false;
+  for (let i = 2; i < num; i++)
+    if (num % i === 0) return false;
   return num !== 1;
 }
 
-for (var i = 1; i <= 2000000; i++) {
-  if (isPrime(i) === true) {
-    primeSum += i
+// If it is prime, push it to the primeArr
+for (var p = 2; p < 2000000; p++) {
+  if (isPrime(p) === true) {
+    primeArr.push(p)
   }
 }
 
-console.log(primeSum);
+// reduce primeArr to a sum
+let primeSum = primeArr.reduce(function(total, num){return total + num})
+console.log(primeSum); // the answer!
