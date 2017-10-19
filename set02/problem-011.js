@@ -47,6 +47,7 @@ for (var i = 0; i < crazyArray.length; i++) {
   let diagonalDownLNumProduct = (crazyArray[i] * crazyArray[i+19] * crazyArray[i+38] * crazyArray[i+57])
   if ((i+3) % 20 !== 0) {
     horizontalNumProduct = (crazyArray[i] * crazyArray[i+1] * crazyArray[i+2] * crazyArray[i+3])
+    productArray.push(horizontalNumProduct)
   }
   productArray.push(verticalNumProduct)
   productArray.push(diagonalDownRNumProduct)
